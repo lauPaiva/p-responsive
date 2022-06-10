@@ -1,0 +1,628 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* estilos generales */
+
+html{
+    font-size: 10px;
+}
+header{
+    text-align: center;    
+}
+body{
+    background-image: url(../img/fondo.png);
+    background-attachment: fixed;
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Rajdhani', sans-serif; 
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 3rem; 
+}
+
+.m1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #888056;
+    box-shadow: #000000 -0.5rem 0.5rem 1.5rem;
+}
+.m2{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #888056;
+    box-shadow: #000000 -0.5rem 0.5rem 1.5rem;
+}
+.m3{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #888056;
+    box-shadow: #000000 -0.5rem 0.5rem 1.5rem;
+}
+.m4{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #888056;
+    box-shadow: #000000 -0.5rem 0.5rem 1.5rem;
+}
+
+
+/* Menú estático */
+
+header nav ul{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    background-color: #998e58e3;
+    width: 100%;      
+    padding: 0.5rem 1.5rem;      
+}
+header nav ul li{
+    list-style: none;
+    padding: 1rem 0rem;
+    margin: 1rem 0rem ;
+    background-color: #dfd49e98;
+    border-radius: 1rem;
+       
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    padding: 0rem 0.4rem;
+    
+}
+
+
+/* Títitulo estático */
+
+h1{
+    color:#0000008e;
+    letter-spacing: 0.2rem;
+    font-size: 8vw;
+    display: inline-block;
+    background-color:#dfd49e62;
+    border-start-end-radius: 0.4rem;
+    border-start-start-radius:0.4rem;
+    padding: 2rem;
+    margin-top: 6.2rem;
+}
+
+p{
+    text-align: justify; 
+    background-color: rgba(250, 235, 215, 0.164);
+    color: white;
+    padding: 1rem;
+    box-shadow: #000000 -0.3rem 0.3rem 1rem;
+    border-radius: 0.5rem;
+}
+img{
+    box-shadow: #000000 -0.8rem 1rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+
+/* Estilos del home mobile */
+/* MAIN */
+
+.contenedor-a .main{
+    background-color: #888056;
+    box-shadow: #000000 -0.5rem 0.5rem 1.5rem;
+    padding: 1rem 1rem;
+    margin: 0px 0.5rem ;
+    border-start-start-radius:2rem;
+    border-start-end-radius:2rem;
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+
+.contenedor-a .div-img__img{
+    min-width:12rem;
+    width: 33vw;
+    float: left;
+    margin: -0.5rem 0.5rem 0.8rem -0.5rem;
+}  
+.contenedor-a .parrafo{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+}
+
+
+/* FOOTER */
+.footer{
+    text-align: center;
+    background-color: #888056;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+@media screen and (min-width:600px){
+    /* estilos del home tablet */
+
+    /* MENU */
+    .menu__a{
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    /* MAIN */
+    .contenedor-a .div-img__img{
+        max-width: 32rem;
+        margin: -0.5rem 1rem 1rem -0.5rem;
+    }
+    .contenedor-a .parrafo{
+        font-size: 1.7rem;
+        padding: 2rem;
+        min-height: 47rem;
+    }
+    
+}
+@media screen and (min-width:1024px){
+    /* estilos del home desktop */
+
+    /* MENU */
+    .menu__ul{
+        justify-content: space-around
+    }
+    .menu__a{
+        font-size: 2rem;
+    }
+    .contenedor-a .div-img__img{
+        max-width: 40rem;
+    }
+    .contenedor-a .parrafo{
+        font-size: 2.1rem;
+        min-height: 59rem;
+    }
+}
+
+
+/* Estilos de ciclo básico mobile */
+
+/* MAIN */
+.contenedor-b .main{
+    display: grid;
+    grid-template-areas: "img1"
+                         "p1"
+                         "img2"
+                         "p2"
+                         "img3"
+                         "p3 "
+                         "img4"
+                         "p4";   
+}
+.contenedor-b img{
+    min-width:12rem;
+    max-width: 21rem;
+    width: 45vw;
+    margin-bottom: 1.5rem;
+}
+.contenedor-b p{
+    font-size: 1.2rem;
+}
+.contenedor-b .div-img1{
+    grid-area: img1;   
+}
+.contenedor-b .div-img2{
+    grid-area: img2;
+}
+.contenedor-b .div-img3{
+    grid-area: img3;
+}
+.contenedor-b .div-img4{
+    grid-area: img4;
+}
+.contenedor-b .parrafo1{
+    grid-area: p1;
+}
+.contenedor-b.parrafo2{
+    grid-area: p2;
+}
+.contenedor-b .parrafo3{
+    grid-area: p3;
+}
+.contenedor-b .parrafo4{
+    grid-area: p4;
+}
+.contenedor-b .m1{
+    padding: 1rem 1rem;
+    margin-bottom: 2.5rem;
+    
+}
+.contenedor-b .m2{
+    padding: 1rem 1rem;
+    margin: 2.5rem 0rem ;
+    
+}
+.contenedor-b .m3{
+    padding: 1rem 1rem;
+    margin: 2.5rem 0rem ;
+    
+}
+.contenedor-b .m4{
+    padding: 1rem 1rem;
+    margin: 2.5rem 0rem 5rem 0rem ;
+}
+
+
+/* Estilos de ciclo básico tablet */
+
+@media screen and (min-width:600px){
+
+    /* MAIN */
+    .contenedor-b .main{
+        margin: 0rem 3rem;
+    }
+    .contenedor-b .m1{
+        border-start-start-radius:2rem;
+        border-start-end-radius:2rem;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+    .contenedor-b .m2{
+        border-start-start-radius:2rem;
+        border-start-end-radius:2rem;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+    .contenedor-b .m3{
+        border-start-start-radius:2rem;
+        border-start-end-radius:2rem;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+    .contenedor-b .m4{
+        border-start-start-radius:2rem;
+        border-start-end-radius:2rem;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+
+    .contenedor-b p{
+        font-size: 1.7rem;
+        width: 80%;
+        padding: 2rem;
+    }
+    .contenedor-b img{
+        max-width: 30rem;
+        width: 40vw;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* Estilos de ciclo básico desktop */
+
+@media screen and (min-width:1024px){
+
+    /* MAIN */
+    .contenedor-b .main{
+        grid-template-areas: "img1 img2"
+                             "p1 p2"
+                             "img3 img4"
+                             "p3 p4";
+    }
+    .contenedor-b img{
+        max-width: 35rem;
+        width: 45vw;
+        margin-bottom: 1.5rem;
+    }
+    .contenedor-b p{
+        font-size: 2.1rem;
+    }
+    .contenedor-b .m1{
+        margin: 0rem 2rem 10rem 2rem;
+        padding: 3rem;
+    }
+    .contenedor-b .m2{
+        margin: 0rem 2rem 10rem 2rem;
+        padding: 3rem;
+    }
+    .contenedor-b .m3{
+        margin: 0rem 2rem 10rem 2rem;
+        padding: 3rem;
+    }
+    .contenedor-b .m4{
+        margin: 0rem 2rem 10rem 2rem;
+        padding: 3rem;
+    }
+
+} 
+
+
+
+/* Estilos bachillerato mobile */
+
+/* MAIN */
+.contenedor-c .cont-grid{
+    display: grid;
+    grid-template-areas: "main main aside"
+                         "main main aside";
+}
+.contenedor-c .main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-c .aside{
+    grid-area: aside;
+    background-color: #888056;
+    box-shadow: #000000 -0.5rem 0.5rem 1.5rem;
+    margin-bottom: 2rem;
+    width: 25vw;
+    
+}
+.contenedor-c .div-img img{
+    min-width: 12rem;
+    max-width: 21rem;
+    width: 30vw;
+    margin-bottom: 1rem;
+}
+.contenedor-c .aside__p{
+    height: 100%;
+}
+.contenedor-c .m1{
+    padding: 1rem 1rem;
+    margin: 0rem 1rem 0rem 0.5rem;
+    border-start-start-radius:2rem;
+    border-start-end-radius:2rem;
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+.contenedor-c .m2{
+    padding: 1rem 1rem;
+    margin: 1rem 1rem 2rem 0.5rem;
+    border-start-start-radius:2rem;
+    border-start-end-radius:2rem;
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+
+
+/* Estilos bachillerato tablet */
+
+@media screen and (min-width:600px){
+    .contenedor-c p{
+        font-size: 1.7rem;
+        padding: 2rem;
+    }
+    .contenedor-c .div-img img{
+        max-width: 40rem;
+        width: 30vw;
+        margin-bottom: 2rem;
+    }
+    .contenedor-c .aside{
+    width: 20vw;   
+    max-width: 20rem;
+    }
+}
+
+
+/* Estilos bachillerato desktop */
+
+@media screen and (min-width: 1024px){
+    .contenedor-c .div-img img{
+        max-width: 50rem;
+        width: 30vw;
+    }
+    .contenedor-c p{
+        font-size: 2.1rem;
+    }
+}
+
+
+/* Estilos sobre mi mobile */
+.contenedor-e .main{
+    display: grid;
+    grid-template-areas: "m2""m1""m3" ;
+}
+.contenedor-e .m2{
+    grid-area: m2;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+.contenedor-e .m1{
+    grid-area: m1;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+.contenedor-e .m3{
+    grid-area: m3;
+    padding: 1rem;
+    margin-bottom: 5rem;
+}
+
+.contenedor-e .div-img img{
+    min-width: 12rem;
+    max-width: 21rem;
+    width: 30vw;
+    margin-bottom: 1rem;
+}
+
+
+/* Estilos sobre mí tablet */
+@media screen and (min-width:600px){
+    .contenedor-e .parrafo{
+        font-size: 1.7rem;
+        width: 80%;
+        padding: 2rem;
+    }
+    .contenedor-e .div-img img{
+        margin-bottom: 2rem;
+    }
+    .contenedor-e .m1{
+        padding: 1rem;
+        margin: 1rem 1rem 2rem 1rem;
+        border-start-start-radius:2rem;
+        border-start-end-radius:2rem;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+    .contenedor-e .m2{
+        padding: 1rem;
+        margin: 0rem 1rem 2rem 1rem;
+        border-start-start-radius:2rem;
+        border-start-end-radius:2rem;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+    .contenedor-e .m3{
+        padding: 1rem ;
+        margin: 1rem 1rem 3rem 1rem;
+        border-start-start-radius:2rem;
+        border-start-end-radius:2rem;
+        border-end-end-radius: 1rem;
+        border-end-start-radius: 1rem;
+    }
+}
+
+
+/* Estilos sobre mí desktop */
+@media screen and (min-width:1024px){
+    .contenedor-e .main{
+        display: grid;
+        grid-template-areas: "m1 m2 m3" ;
+    }
+    .contenedor-e .m2{
+        grid-area: m2;
+    }
+    .contenedor-e .m1{
+        grid-area: m1;
+    }
+    .contenedor-e .m3{
+        grid-area: m3;
+    }
+    .contenedor-e .parrafo{
+        font-size: 2.1rem;
+    }
+}
+
+
+/* Estilos contacto mobile */
+.contenedor-d .main{
+    display: grid;
+    grid-template-areas: "form form""ig fb";
+    justify-content: center;
+}
+.ig{
+    display: flex;
+    justify-content: center;
+    grid-area: ig;
+    margin: 1.5rem 0.5rem;
+    background-color: #888056;
+    padding: 1.5rem;
+    border-radius: 1rem;
+
+}
+.fb{
+    display: flex;
+    justify-content: center;
+    grid-area: fb;
+    margin: 1.5rem 1rem;
+    background-color: #888056;
+    padding: 1.5rem;
+    border-radius: 1rem;
+}
+.contenedor-d img{
+    width: 10vw;
+    border-radius: 0;
+    box-shadow: none;
+    
+}
+.submain{
+    
+    grid-area: form;
+    background-color: #888056;
+    box-shadow: #000000 -0.5rem 0.5rem 1rem;
+    color: white;
+    padding: 1.8rem;
+    width: 85vw;
+    min-width: 28rem;
+    border-start-start-radius:2rem;
+    border-start-end-radius:2rem;
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+.form__div{
+    text-align: justify; 
+    background-color: rgba(250, 235, 215, 0.164);
+    padding: 1rem;
+    margin: 2.5rem;
+    box-shadow: #000000 -0.3rem 0.3rem 1rem;
+    border-radius: 0.5rem;
+}
+.form__title{
+    background-color: #00000065;
+    color:#ffffff;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.form__div-1{
+    display: flex;
+    justify-content: center;
+}
+.form__input-1{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.form__input{
+    padding: 0.7rem;
+    width: 100%;
+}
+
+.form__lab{
+    display: flex;
+}
+
+
+
+/* Estilos contacto tablet */
+
+@media screen and (min-width:600px){
+    .contenedor-d .main{
+        font-size: 1.7rem;
+    }
+}
+
+
+/* Estilos contacto desktop */
+@media screen and (min-width:1024px){
+
+    .contenedor-d .main{
+        display: grid;
+        grid-template-areas: "ig form fb";
+        font-size: 2rem;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .submain{
+        width: 50vw;
+    }
+    .ig{
+        width: 15vw;
+        height: 20vh;
+        margin: 4rem;
+    }
+    .fb{
+        width: 15vw;
+        height: 20vh;
+        margin: 4rem;
+        
+    }
+    
+}
+
+
